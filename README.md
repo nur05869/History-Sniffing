@@ -12,7 +12,6 @@ This repository contains the code for a simple web application that helps sugges
 - [Usage](#usage)
 - [Files](#files)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Description
 
@@ -65,10 +64,3 @@ If you would like to contribute to this project, please follow these steps:
 4. Push to the branch (`git push origin feature/your-feature-name`).
 5. Open a pull request.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-Feel free to modify this `README.md` file to better suit your project's specifics and requirements.
