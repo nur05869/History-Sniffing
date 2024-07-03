@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Welcome to the Most Fantastic Website</title>
+  <style>
+    /* CSS to hide links */
+    /* a[href^="https://www.stthomas.edu/catalog/current/arth/"],
+    a[href^="https://www.stthomas.edu/catalog/current/chem/"],
+    a[href^="https://www.stthomas.edu/catalog/current/econ/"],
+    a[href^="https://www.stthomas.edu/catalog/current/engl/"],
+    a[href^="https://www.stthomas.edu/catalog/current/math/"],
+    a[href^="https://www.stthomas.edu/catalog/current/physics/"] {
+      display: none;
+    } */
+
+    /* CSS to hide text selection */
+    /* ::selection {
+      background: transparent;
+    } */
+
+    /* CSS to hide cursor on links */
+    /* a {
+      cursor: default;
+    } */
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .display-numbers {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .display-numbers li {
+      display: inline;
+    }
+
+    .display-numbers li a {
+      display: inline-block;
+      padding: 10px;
+      text-decoration: none;
+      color: white;
+      border: 1px solid white;
+      border-radius: 10px;
+      font-size: 50px;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .display-numbers li a:visited {
+      color: black;
+      border: 1px solid black;
+    }
+
+    .container form input[type="text"] {
+      width: 50%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      font-size: 25px;
+      text-align: center;
+    }
+
+    .container form input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      font-size: 25px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <h1>Welcome to the Most Fantastic Website</h1>
+    <p>Welcome to our website! We can help suggest a major. Please complete the following task to get started:</p>
+    <!-- Insert your task here (e.g., a CAPTCHA ) -->
+    <!-- display numbers for capcha  -->
+    <div class="display-numbers">
+      <ul>
+        <li><a href="https://www.stthomas.edu/catalog/current/arth/">1</a></li>
+        <li><a href="https://www.stthomas.edu/catalog/current/chem/">9</a></li>
+        <li><a href="https://www.stthomas.edu/catalog/current/econ/">2</a></li>
+        <li><a href="https://www.stthomas.edu/catalog/current/engl/">8</a></li>
+        <li><a href="https://www.stthomas.edu/catalog/current/math/">3</a></li>
+        <li><a href="https://www.stthomas.edu/catalog/current/physics/">7</a></li>
+      </ul>
+    </div>
+
+    <form action="historyserver.php" method="post">
+      <!-- Insert your task input here (e.g., a text box for the CAPTCHA ) -->
+      <input type="text" id="visited_majors" name="visited_majors" placeholder="Enter the numbers shown above."><br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+</body>
+
+</html>
